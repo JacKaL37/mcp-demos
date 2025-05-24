@@ -1,0 +1,21 @@
+user_id,first_name,last_name,email,signup_date,last_login,subscription_plan,active_status,country,city,age,preferred_language
+1001,John,Smith,john.smith@example.com,2023-01-15,2023-06-10,premium,true,USA,New York,34,en
+1002,Emma,Johnson,emma.j@example.com,2023-02-03,2023-06-12,basic,true,Canada,Toronto,29,en
+1003,Michael,Williams,m.williams@example.com,2023-01-21,2023-06-11,premium,true,UK,London,45,en
+1004,Sophia,Brown,sophia.b@example.com,2023-03-07,2023-06-09,free,true,Australia,Sydney,31,en
+1005,James,Jones,james.jones@example.com,2023-02-18,2023-06-10,basic,true,USA,Los Angeles,27,en
+1006,Olivia,Garcia,olivia.g@example.com,2023-01-30,2023-06-01,premium,false,Spain,Madrid,38,es
+1007,William,Miller,w.miller@example.com,2023-03-12,2023-06-11,basic,true,USA,Chicago,42,en
+1008,Ava,Davis,ava.davis@example.com,2023-02-25,2023-06-08,free,true,France,Paris,26,fr
+1009,Alexander,Rodriguez,alex.r@example.com,2023-03-05,2023-06-05,premium,true,Mexico,Mexico City,33,es
+1010,Isabella,Wilson,i.wilson@example.com,2023-01-19,2023-06-09,basic,true,Canada,Vancouver,35,en
+1011,Ethan,Martinez,ethan.m@example.com,2023-04-02,2023-06-10,free,true,USA,Miami,24,en
+1012,Mia,Anderson,mia.a@example.com,2023-02-11,2023-05-30,premium,false,Germany,Berlin,41,de
+1013,Daniel,Taylor,d.taylor@example.com,2023-03-23,2023-06-11,basic,true,USA,Boston,37,en
+1014,Charlotte,Thomas,c.thomas@example.com,2023-01-27,2023-06-10,free,true,UK,Manchester,30,en
+1015,Matthew,Hernandez,matt.h@example.com,2023-02-09,2023-06-07,premium,true,USA,San Francisco,39,en
+1016,Amelia,Moore,amelia.m@example.com,2023-03-18,2023-06-09,basic,true,Australia,Melbourne,28,en
+1017,Benjamin,Martin,ben.martin@example.com,2023-02-05,2023-06-02,free,false,Canada,Montreal,44,fr
+1018,Harper,Jackson,harper.j@example.com,2023-01-22,2023-06-11,premium,true,USA,Seattle,32,en
+1019,Sebastian,Thompson,s.thompson@example.com,2023-03-30,2023-06-10,basic,true,Ireland,Dublin,36,en
+1020,Evelyn,White,evelyn.w@example.com,2023-02-14,2023-06-08,free,true,New Zealand,Auckland,27,en

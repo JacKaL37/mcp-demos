@@ -11,5 +11,6 @@ dependencies = [
     "mcp>=1.8.1",
     "openai>=1.78.1",
     "openai-agents>=0.0.14",
+    "pandas>=2.2.3",
     "python-dotenv>=1.1.0",
 ]

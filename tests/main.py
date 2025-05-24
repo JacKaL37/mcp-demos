@@ -40,6 +40,12 @@ async def run(mcp_server: MCPServer):
     print(f"\n\nRunning: {message}")
     result = await Runner.run(starting_agent=agent, input=message)
     print(result.final_output)
+    
+    # Test the SQLite database tool
+    message = "Use the SQL tool a few times to explore the database and explain what you see."
+    print(f"\n\nRunning: {message}")
+    result = await Runner.run(starting_agent=agent, input=message)
+    print(result.final_output)
 
 
 async def main():
@@ -67,7 +73,7 @@ if __name__ == "__main__":
     process: subprocess.Popen[Any] | None = None
     try:
         this_dir = os.path.dirname(os.path.abspath(__file__))
-        server_file = os.path.join(this_dir, "server.py")
+        server_file = os.path.join(this_dir, "..", "src", "server.py")
 
         print("Starting SSE server at http://localhost:8000/sse ...")
 

@@ -1,0 +1,36 @@
+Todos:
+
+Things to research:
+
+VSCode:
+- spin myself up in there again
+
+Continue.dev
+- ƒix the fucking thing / get it installed
+- learn how to attach an MCP to it
+
+Tracing
+Helicone tracing--Quick Setup and Minimal Integration
+- or langtrace --Compatibility with Existing Observability Tools
+- or langfuse -- Deep Tracing and Prompt Management
+
+LLM Routing
+Litellm universal llm serving to the Agents package--
+
+MCP:
+- learn about resources
+- learn about prompts
+- learn about connecting to Continue
+
+OpenAI Agents:
+- How Agents work, on a quick walkthrough.
+- Verbose agent logs!!!
+
+---
+Skellybot Project Milestones:
+
+What Skellybot Wants:
+- MCP resource: user info. hell yeah.
+- Skellybot source code
+- Skellybot documentation
+-
