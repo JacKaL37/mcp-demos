@@ -50,6 +50,43 @@ def get_current_weather(city: str) -> str:
     response = requests.get(f"{endpoint}/{city}")
     return response.text
 
+@mcp.tool()
+def get_current_time() -> str:
+    """Get the current time"""
+    print("[debug-server] get_current_time()")
+    from datetime import datetime
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+@mcp.tool()
+def ascii_word_art_generator(words: str) -> str:
+    """Generate ASCII art for a given word"""
+    print(f"[debug-server] ascii_word_art_generator({words})")
+    
+    # Simple ASCII art generator using pyfiglet
+    try:
+        import pyfiglet
+        ascii_art = pyfiglet.figlet_format(words)
+        return ascii_art
+    except ImportError:
+        return "Error: pyfiglet module not installed. Please install it to use this feature."
+
+
+
+
+
+# @mcp.resource()
+# def get_status_panel() -> str:
+#     """Get the status panel of the server"""
+#     print("[debug-server] get_status_panel()")
+    
+#     status = {
+#         "server": "running",
+#         "database_connected": conn is not None,
+#         "data_directory": str(DATA_DIR),
+#         "db_path": str(DB_PATH)
+#     }
+    
+#     return f"Server Status:\n{status}"
 
 @mcp.tool()
 def execute_sql(commands: list[str]) -> str:

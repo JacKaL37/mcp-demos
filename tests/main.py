@@ -5,6 +5,9 @@ import subprocess
 import time
 from typing import Any
 
+from langtrace_python_sdk import langtrace
+langtrace.init(api_key="91e4463648736881178851e555131b0776b03d79b6d4fe8e4eef9e5a6363f49d", host="http://localhost:3000")
+
 from agents import Agent, Runner, gen_trace_id, trace
 from agents.mcp import MCPServer, MCPServerSse
 from agents.model_settings import ModelSettings
@@ -23,11 +26,11 @@ async def run(mcp_server: MCPServer):
         model_settings=ModelSettings(tool_choice="required"),
     )
 
-    # Use the `add` tool to add two numbers
-    message = "Add these numbers: 7 and 22."
-    print(f"Running: {message}")
-    result = await Runner.run(starting_agent=agent, input=message)
-    print(result.final_output)
+    # # Use the `add` tool to add two numbers
+    # message = "Add these numbers: 7 and 22."
+    # print(f"Running: {message}")
+    # result = await Runner.run(starting_agent=agent, input=message)
+    # print(result.final_output)
 
     # Run the `get_weather` tool
     message = "What's the weather in Tokyo?"
@@ -35,17 +38,29 @@ async def run(mcp_server: MCPServer):
     result = await Runner.run(starting_agent=agent, input=message)
     print(result.final_output)
 
-    # Run the `get_secret_word` tool
-    message = "What's the secret word?"
-    print(f"\n\nRunning: {message}")
-    result = await Runner.run(starting_agent=agent, input=message)
-    print(result.final_output)
+    # # Run the `get_secret_word` tool
+    # message = "What's the secret word?"
+    # print(f"\n\nRunning: {message}")
+    # result = await Runner.run(starting_agent=agent, input=message)
+    # print(result.final_output)
     
-    # Test the SQLite database tool
-    message = "Use the SQL tool a few times to explore the database and explain what you see."
-    print(f"\n\nRunning: {message}")
-    result = await Runner.run(starting_agent=agent, input=message)
-    print(result.final_output)
+    # # Test the SQLite database tool
+    # message = "Use the SQL tool a few times to explore the database and explain what you see."
+    # print(f"\n\nRunning: {message}")
+    # result = await Runner.run(starting_agent=agent, input=message)
+    # print(result.final_output)
+
+    # # Run the `get_current_time` tool
+    # message = "What's the current time?"
+    # print(f"\n\nRunning: {message}")
+    # result = await Runner.run(starting_agent=agent, input=message)
+    # print(result.final_output)
+
+    # # Run the ascii word art generator tool
+    # message = "Generate ASCII art for a creative phrase to roast someone, improvise one of your choosing."
+    # print(f"\n\nRunning: {message}")
+    # result = await Runner.run(starting_agent=agent, input=message)
+    # print(result.final_output)
 
 
 async def main():

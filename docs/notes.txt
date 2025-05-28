@@ -1,21 +1,30 @@
-Todos:
+# Todos:
 
 Things to research:
 
 VSCode:
-- spin myself up in there again
+- [x] spin myself up in there again
+- get set up with some new symbol nav stuff
+  - outline
+  - code outline
+  - symbols tree view
 
 Continue.dev
+- [x] install the fucking thing 
+  - [x] mac
+  - [ ] windows
 - ƒix the fucking thing / get it installed
 - learn how to attach an MCP to it
 
 Tracing
-Helicone tracing--Quick Setup and Minimal Integration
-- or langtrace --Compatibility with Existing Observability Tools
-- or langfuse -- Deep Tracing and Prompt Management
+- [ ] try all three:
+  - [ ] helicone: Quick Setup and Minimal Integration <- start here
+  - [ ] langtrace: Compatibility with Existing Observability Tools
+  - [ ] langfuse: Deep Tracing and Prompt Management
+- [ ] decide: helicone?
 
 LLM Routing
-Litellm universal llm serving to the Agents package--
+- [ ] try a demo of Litellm -- supposed to be universal llm serving to the Agents package
 
 MCP:
 - learn about resources
@@ -26,6 +35,29 @@ OpenAI Agents:
 - How Agents work, on a quick walkthrough.
 - Verbose agent logs!!!
 
+
+---
+# Tech stack:
+
+context management: MCP (anthropic)
+- FastMCP
+- (FastAPI)
+
+agentics: Agents (openai) 
+
+llm routing: LiteLLM
+
+model tracing: Helicone 
+? and prompt management?: langfuse instead
+
+front: React
+
+structured db: Postgres
+
+unstructured db: Mongo
+
+local models: Ollama
+
 ---
 Skellybot Project Milestones:
 
@@ -34,3 +66,4 @@ What Skellybot Wants:
 - Skellybot source code
 - Skellybot documentation
 -
+
