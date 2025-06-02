@@ -67,3 +67,8 @@ What Skellybot Wants:
 - Skellybot documentation
 -
 
+
+
+upcoming todos:
+- nail down langtrace (or competitor) locally
+- 
