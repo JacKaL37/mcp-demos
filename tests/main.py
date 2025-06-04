@@ -5,9 +5,6 @@ import subprocess
 import time
 from typing import Any
 
-from langtrace_python_sdk import langtrace
-langtrace.init(api_key="91e4463648736881178851e555131b0776b03d79b6d4fe8e4eef9e5a6363f49d", host="http://localhost:3000")
-
 from agents import Agent, Runner, gen_trace_id, trace
 from agents.mcp import MCPServer, MCPServerSse
 from agents.model_settings import ModelSettings

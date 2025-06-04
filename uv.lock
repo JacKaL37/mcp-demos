@@ -827,6 +827,39 @@ wheels = [
 ]
 
 [[package]]
+name = "mcp-demos"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "agents" },
+    { name = "fastmcp" },
+    { name = "httpx" },
+    { name = "langfuse" },
+    { name = "langtrace-python-sdk" },
+    { name = "mcp" },
+    { name = "openai" },
+    { name = "openai-agents" },
+    { name = "pandas" },
+    { name = "pyfiglet" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "agents", specifier = ">=1.4.0" },
+    { name = "fastmcp", specifier = ">=2.3.3" },
+    { name = "httpx", specifier = ">=0.28.1" },
+    { name = "langfuse", specifier = ">=2.60.7" },
+    { name = "langtrace-python-sdk", specifier = ">=3.8.18" },
+    { name = "mcp", specifier = ">=1.8.1" },
+    { name = "openai", specifier = ">=1.78.1" },
+    { name = "openai-agents", specifier = ">=0.0.14" },
+    { name = "pandas", specifier = ">=2.2.3" },
+    { name = "pyfiglet", specifier = ">=1.0.2" },
+    { name = "python-dotenv", specifier = ">=1.1.0" },
+]
+
+[[package]]
 name = "mdurl"
 version = "0.1.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2128,39 +2161,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/a6/ae/9bbb19b9e1c450cf9ecaef06463e40234d98d95bf572fab11b4f19ae5ded/uvicorn-0.34.2.tar.gz", hash = "sha256:0e929828f6186353a80b58ea719861d2629d766293b6d19baf086ba31d4f3328", size = 76815 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b1/4b/4cef6ce21a2aaca9d852a6e84ef4f135d99fcd74fa75105e2fc0c8308acd/uvicorn-0.34.2-py3-none-any.whl", hash = "sha256:deb49af569084536d269fe0a6d67e3754f104cf03aba7c11c40f01aadf33c403", size = 62483 },
-]
-
-[[package]]
-name = "weather"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "agents" },
-    { name = "fastmcp" },
-    { name = "httpx" },
-    { name = "langfuse" },
-    { name = "langtrace-python-sdk" },
-    { name = "mcp" },
-    { name = "openai" },
-    { name = "openai-agents" },
-    { name = "pandas" },
-    { name = "pyfiglet" },
-    { name = "python-dotenv" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "agents", specifier = ">=1.4.0" },
-    { name = "fastmcp", specifier = ">=2.3.3" },
-    { name = "httpx", specifier = ">=0.28.1" },
-    { name = "langfuse", specifier = ">=2.60.7" },
-    { name = "langtrace-python-sdk", specifier = ">=3.8.18" },
-    { name = "mcp", specifier = ">=1.8.1" },
-    { name = "openai", specifier = ">=1.78.1" },
-    { name = "openai-agents", specifier = ">=0.0.14" },
-    { name = "pandas", specifier = ">=2.2.3" },
-    { name = "pyfiglet", specifier = ">=1.0.2" },
-    { name = "python-dotenv", specifier = ">=1.1.0" },
 ]
 
 [[package]]

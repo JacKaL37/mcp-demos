@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Goblin Ambush",
+    "monsters": [
+      {
+        "name": "Goblin",
+        "hp": 7,
+        "ac": 15,
+        "attack": "Scimitar +4 (1d6+2 slashing) or Shortbow +4 (1d6+2 piercing)",
+        "abilities": "Nimble Escape"
+      },
+      {
+        "name": "Goblin",
+        "hp": 7,
+        "ac": 15,
+        "attack": "Scimitar +4 (1d6+2 slashing) or Shortbow +4 (1d6+2 piercing)",
+        "abilities": "Nimble Escape"
+      },
+      {
+        "name": "Goblin",
+        "hp": 7,
+        "ac": 15,
+        "attack": "Scimitar +4 (1d6+2 slashing) or Shortbow +4 (1d6+2 piercing)",
+        "abilities": "Nimble Escape"
+      },
+      {
+        "name": "Goblin",
+        "hp": 7,
+        "ac": 15,
+        "attack": "Scimitar +4 (1d6+2 slashing) or Shortbow +4 (1d6+2 piercing)",
+        "abilities": "Nimble Escape"
+      },
+      {
+        "name": "Goblin Boss",
+        "hp": 21,
+        "ac": 17,
+        "attack": "Multiattack - Scimitar +4 (1d6+2 slashing), Javelin +4 (1d6+2 piercing)",
+        "abilities": "Leadership, Nimble Escape"
+      }
+    ],
+    "description": "The party is ambushed by four goblins and a goblin boss lurking in the forest.",
+    "created": "2025-06-02T13:13:51.046508"
+  },
+  {
+    "name": "Goblin Cave",
+    "monsters": [
+      {
+        "name": "Goblin",
+        "quantity": 5,
+        "stats": {
+          "AC": 15,
+          "HP": 7,
+          "Attack Bonus": 4,
+          "Damage": "1d6+2"
+        }
+      },
+      {
+        "name": "Goblin Shaman",
+        "quantity": 1,
+        "stats": {
+          "AC": 12,
+          "HP": 18,
+          "Attack Bonus": 5,
+          "Damage": "1d8+3",
+          "Spells": [
+            "Magic Missile",
+            "Shield"
+          ]
+        }
+      }
+    ],
+    "description": "A small cave filled with goblins, led by a goblin shaman.",
+    "created": "2025-06-02T13:14:16.731953"
+  }
+]
