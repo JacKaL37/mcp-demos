@@ -48,7 +48,7 @@ async def run(mcp_server: MCPServer):
     result = await Runner.run(starting_agent=agent, input=msg_render)
     print("=== Result ===")
     print(result.final_output)
-
+#https://en.wikipedia.org/wiki/CLARION_(cognitive_architecture)
 async def main(server_port):
     async with MCPServerSse(
         name="BeautifulSoup+Playwright Server",
