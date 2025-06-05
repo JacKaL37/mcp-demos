@@ -1,15 +1,22 @@
 import os
 import pathlib
 import requests
+import signal
+import atexit
 from typing import Optional, Union, Any
 
 from fastmcp import FastMCP
 from bs4 import BeautifulSoup
 import markdownify
 from playwright.sync_api import sync_playwright
+from dotenv import load_dotenv
 
-# Initialize the MCP server
-mcp = FastMCP("Content Extractor Server")
+# Load environment variables from .env file
+load_dotenv()
+# Get port from environment variable or use default
+SERVER_PORT = int(os.environ.get("SERVER_PORT", 8089))
+# Initialize the MCP server with the specified port
+mcp = FastMCP("Content Extractor Server", port=SERVER_PORT)
 
 # ---------- Helper Functions ----------
 
@@ -110,5 +117,17 @@ def fetch_and_structure(
         "structured_data": serialize_structure(node)
     }
 
+def cleanup_handler(sig=None, frame=None):
+    """Handle cleanup when the server is being shut down"""
+    print("[debug-server] Shutting down precision-citation server...")
+    # Add any necessary cleanup code here
+
+# Register signal handlers for proper cleanup
+signal.signal(signal.SIGINT, cleanup_handler)
+signal.signal(signal.SIGTERM, cleanup_handler)
+atexit.register(cleanup_handler)
+
 if __name__ == "__main__":
+    print(f"[debug-server] Starting Content Extractor Server on port {SERVER_PORT}...")
     mcp.run(transport="sse")
+    print("[debug-server] Server stopped.")
