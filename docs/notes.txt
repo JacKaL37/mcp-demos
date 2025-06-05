@@ -72,3 +72,11 @@ What Skellybot Wants:
 upcoming todos:
 - nail down langtrace (or competitor) locally
 - 
+
+
+--- 
+
+big user install point of order:
+- had to fix the tensorflow-io version to something that works on windows.
+  - maybe a uv-originating issue, but, unclear
+- the demo server now spins up on progressive ports to protect against windows' slow release schedule
