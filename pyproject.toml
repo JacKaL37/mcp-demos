@@ -16,4 +16,5 @@ dependencies = [
     "pandas>=2.2.3",
     "pyfiglet>=1.0.2",
     "python-dotenv>=1.1.0",
+    "tensorflow-io-gcs-filesystem==0.31.0",
 ]

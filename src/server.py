@@ -2,12 +2,21 @@ import random
 import sqlite3
 import os
 import pathlib
+import sys
+import atexit
+import signal
 
 import requests
 from fastmcp import FastMCP
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+# Get port from environment variable or use default
+SERVER_PORT = int(os.environ.get("SERVER_PORT", 8089))
 
 # Create server
-mcp = FastMCP("Echo Server")
+mcp = FastMCP("Echo Server", port=SERVER_PORT)
 
 # Set up database connection
 # Use absolute path based on script location
@@ -129,4 +138,3 @@ def execute_sql(commands: list[str]) -> str:
 
 if __name__ == "__main__":
     mcp.run(transport="sse")
-
