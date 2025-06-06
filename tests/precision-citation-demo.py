@@ -33,22 +33,22 @@ async def run(mcp_server: MCPServer):
     )
 
     # Fetch full page, no rendering
-    msg_full = "Fetch 'https://example.com' and return its main content."
+    msg_full = "Fetch 'https://en.wikipedia.org/wiki/CLARION_(cognitive_architecture)', pull a quote from the page that explains an interesting detail, then discuss it, and finally cite the paragraph it occurs in using a markdown link with sufficient css selectors (not ids) to target the specific paragraph-- include the css selector IN THE URL."
     print(f"\nRunning full-page fetch:\n{msg_full}")
     result = await Runner.run(starting_agent=agent, input=msg_full)
     print("=== Result ===")
     print(result.final_output)
 
-    # Fetch a specific element with rendering enabled
-    msg_render = (
-        "Fetch 'https://example.com' with render=True and element_address='//div[@id=\"content\"]'. "
-        "Return the Markdown and structure for that element."
-    )
-    print(f"\nRunning element fetch with render:\n{msg_render}")
-    result = await Runner.run(starting_agent=agent, input=msg_render)
-    print("=== Result ===")
-    print(result.final_output)
-#https://en.wikipedia.org/wiki/CLARION_(cognitive_architecture)
+    # # Fetch a specific element with rendering enabled
+    # msg_render = (
+    #     "Fetch 'https://example.com' with render=True and element_address='//div[@id=\"content\"]'. "
+    #     "Return the Markdown and structure for that element."
+    # )
+    # print(f"\nRunning element fetch with render:\n{msg_render}")
+    # result = await Runner.run(starting_agent=agent, input=msg_render)
+    # print("=== Result ===")
+    # print(result.final_output)
+
 async def main(server_port):
     async with MCPServerSse(
         name="BeautifulSoup+Playwright Server",
